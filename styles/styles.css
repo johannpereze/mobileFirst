@@ -35,6 +35,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 30rem;
   /* position: relative; */
   background: var(--linear-BG);
   min-width: 32rem;
@@ -69,14 +70,25 @@ header img {
 }
 
 .header__button {
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 4.8rem;
   width: 22.9rem;
   background-color: white;
   text-decoration: none;
-  position: static;
+  position: absolute;
   background: #faf8f7;
   box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
   border-radius: 4px;
   padding: 12px 16px;
+  top: 27rem;
+  color: var(--warm-black);
 }
+.header__button span {
+  background-image: url("../assets/icons/dropDown.svg");
+  width: 13px;
+  height: 8px;
+  margin-left: 1rem;
+}
+
