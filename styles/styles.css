@@ -219,9 +219,93 @@ p {
   padding: 0.8rem;
   border-radius: 8px;
   text-align: center;
-  margin: 1.8rem auto;
+  margin: 1.8rem auto 6.4rem auto;
 }
 
-.actualization p{
+.actualization p {
   color: var(--warm-black1);
+}
+
+.blackCards-container {
+  width: 100%;
+  background-color: var(--warm-black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+}
+
+.batata-icon {
+  background: url("../assets/img/batata.svg");
+  width: 40.57px;
+  height: 24.01px;
+  position: absolute;
+  top: 99rem;
+}
+
+.blackCards-container h2 {
+  color: white;
+  text-align: center;
+  width: 90%;
+  margin: 6.4rem auto 2.4rem auto;
+  font-size: 2.4rem;
+}
+.blackCards-container--title .blackCards-container--p {
+  text-align: center;
+  margin: 0 auto 2.4rem auto;
+  
+}
+.blackCards-container p {
+  width: 90%;
+  margin: 0 0 2.4rem 0;
+  color: #808080;
+}
+
+.black-card {
+  width: 90%;
+  max-width: 90rem;
+  margin-top: 1.6rem;
+  background-color: var(--warm-black1);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+  border-radius: 4px;
+  padding: 1.6rem;
+}
+
+.black-card:last-child {
+  margin-bottom: 6.4rem;
+}
+
+.black-card h3 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  color: white;
+  margin-top: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.black-card p {
+  margin-bottom: 0.6rem;
+}
+
+.clockIcon {
+  background: url("../assets/icons/clock1.svg");
+}
+.eyeIcon {
+  background: url("../assets/icons/eye1.svg");
+}
+.dolarkIcon {
+  background: url("../assets/icons/dollar-sign1.svg");
+}
+.checkIcon {
+  background: url("../assets/icons/check-circle1.svg");
+}
+
+.clockIcon,
+.eyeIcon,
+.dolarkIcon,
+.checkIcon {
+  padding: 0.1rem 1rem;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
