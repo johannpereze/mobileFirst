@@ -49,6 +49,10 @@ header img {
   margin-bottom: 2.1rem;
 }
 
+li {
+  list-style: none;
+}
+
 p {
   font-weight: 500;
   font-size: 14px;
@@ -98,9 +102,6 @@ p {
   width: 13px;
   height: 8px;
   margin-left: 1rem;
-}
-
-.firstSection {
 }
 
 .BCimg {
@@ -227,6 +228,7 @@ p {
 }
 
 .blackCards-container {
+  position: relative;
   width: 100%;
   background-color: var(--warm-black);
   display: flex;
@@ -240,7 +242,7 @@ p {
   width: 40.57px;
   height: 24.01px;
   position: absolute;
-  top: 99rem;
+  top: -1rem;
 }
 
 .blackCards-container h2 {
@@ -253,7 +255,6 @@ p {
 .blackCards-container--title .blackCards-container--p {
   text-align: center;
   margin: 0 auto 2.4rem auto;
-  
 }
 .blackCards-container p {
   width: 90%;
@@ -308,4 +309,158 @@ p {
   padding: 0.1rem 1rem;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.photo-container {
+  width: 100%;
+  height: 38.7rem;
+  background: url("../assets/img/bitcoinbaby1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.photo-container-title h3 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 6rem;
+}
+
+.pricing__info h3 {
+  margin: 6.4rem 1.5rem 1.2rem 1.5rem;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 26px;
+  text-align: center;
+  color: var(--warm-black);
+}
+
+.pricing__info p {
+  text-align: center;
+  margin: 1.2rem 1.5rem 2.5rem 1.5rem;
+}
+
+.pricing__card {
+  position: relative;
+  width: 190px;
+  height: 247px;
+  background: white;
+  box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+  border-radius: 8px;
+  margin: 2.5rem auto 6.4rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pricing__card--recommended {
+  position: absolute;
+  top: -1.55rem;
+  padding: 0.8rem 0.8rem;
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: white;
+  background-color: var(--bitcoin-orange);
+  border-radius: 8px;
+}
+
+.pricing__card--title p {
+  color: black;
+  margin-top: 3.1rem;
+  margin-bottom: 0.8rem;
+}
+
+.pricing__card--price {
+  display: flex;
+  align-items: flex-start;
+}
+
+.pricing__card--price p {
+  margin: 0.8rem 0 0.8rem 0;
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 52px;
+  line-height: 52px;
+  letter-spacing: -0.08em;
+  color: black;
+}
+
+.pricing__card--price span {
+  margin: 0.8rem 0 0.8rem 0;
+  font-family: Inter;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: #363636;
+}
+
+.pricing__card--info p {
+  font-family: Inter;
+  font-size: 12px;
+  line-height: 15px;
+  color: #757575;
+}
+
+.pricing__card--CTA {
+  width: 151px;
+  height: 48px;
+  background: var(--off-white) 7;
+  border: 2px solid var(--bitcoin-orange);
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: var(--warm-black);
+}
+
+.pricing__card--CTA span {
+  background: url("../assets/icons/arrow-right\ 1.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 4px 12px;
+}
+
+footer {
+  background-color: var(--bitcoin-orange);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer__menu ul {
+  margin: 4rem 0;
+}
+
+.footer__menu ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 18px;
+  line-height: 2.4rem;
+  color: white;
+}
+
+.footer__logo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__logo span{
+background: url("../assets/img/batata.svg");
+background-size: cover;
+background-repeat: no-repeat;
+padding: 12px 20px;
+}
+
+.footer__logo p{
+  font-size: 8px;
+  line-height: 18px;
+  color: var(--soft-orange);  
 }
