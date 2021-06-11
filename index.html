@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Inter:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./styles/tablet.css" media="(min-width: 750px)">
   </head>
   <body>
     <header>
@@ -68,14 +69,15 @@
           </div>
         </section>
       </section>
-      <section class="blackCards-container">
+      <section class="blackCards-section">
         <span class="batata-icon"></span>
-        <div class="blackCards-container--title">
+        <div class="blackCards-section--title">
           <h2>Creamos un producto sin comparación.</h2>
-          <p class="blackCards-container--p">
+          <p class="blackCards-section--p">
             Confiable y diseñado para su uso diario.
           </p>
         </div>
+        <div class="black-cards__container">
         <div class="black-card">
           <span class="clockIcon"></span>
           <h3>Tiempo real</h3>
@@ -108,6 +110,7 @@
             contenido mientras se actualizan.
           </p>
         </div>
+      </div>
       </section>
       <section class="photo-container">
         <div class="photo-container-title"><h3>Conócelo hoy.</h3></div>
@@ -116,20 +119,48 @@
         <div class="pricing__info">
           <h3>Escoge el plan que mejor se ajuste a ti.</h3>
           <p>Cualquier plan te da acceso completo a nuestra plataforma.</p>
-          <div class="pricing__card">
-            <span class="pricing__card--recommended">Recomendado</span>
-            <div class="pricing__card--title"><p>Pago Anual</p></div>
-            <div class="pricing__card--price">
-              <span>$</span>
-              <p>99</p>
+          <section class="pricing-cards__container">
+            <div class="pricing__card">
+              <div class="pricing__card--title"><p>Pago Mensual</p></div>
+              <div class="pricing__card--price">
+                <span>$</span>
+                <p>19</p>
+              </div>
+              <div class="pricing__card--info">
+                <p></p>
+              </div>
+              <button class="pricing__card--CTA">
+                Escoger este<span></span>
+              </button>
             </div>
-            <div class="pricing__card--info">
-              <p>*Ahorras $129 comparado al plan mensual.</p>
+            <div class="pricing__card">
+              <span class="pricing__card--recommended">Recomendado</span>
+              <div class="pricing__card--title"><p>Pago Anual</p></div>
+              <div class="pricing__card--price">
+                <span>$</span>
+                <p>99</p>
+              </div>
+              <div class="pricing__card--info">
+                <p>*Ahorras $129 comparado al plan mensual.</p>
+              </div>
+              <button class="pricing__card--CTA">
+                Escoger este<span></span>
+              </button>
             </div>
-            <button class="pricing__card--CTA">
-              Escoge este <span></span>
-            </button>
-          </div>
+            <div class="pricing__card">
+              <div class="pricing__card--title"><p>Plan Empresarial</p></div>
+              <div class="pricing__card--price">
+                <span>$</span>
+                <p>199</p>
+              </div>
+              <div class="pricing__card--info">
+                <p>*Registre hasta 5 usuarios con acceso completo</p>
+              </div>
+              <button class="pricing__card--CTA">
+                Escoger este<span></span>
+              </button>
+            </div>
+          </section>
         </div>
       </section>
     </main>

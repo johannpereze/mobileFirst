@@ -1,0 +1,17 @@
+.black-cards__container {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.black-card{
+    width: 45%;
+    
+}
+
+.pricing-cards__container {
+  justify-content: space-around;
+  margin: auto;
+}
+
+

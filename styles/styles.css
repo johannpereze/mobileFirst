@@ -67,9 +67,10 @@ p {
 
 .header__title-container h1 {
   width: 90%;
-  min-width: 28.8rem;
+  min-width: 32rem;
   max-width: 90rem;
   margin: 1.2rem 0;
+  padding: 0 1rem;
   font-size: 2.4rem;
   color: white;
   text-align: center;
@@ -102,6 +103,10 @@ p {
   width: 13px;
   height: 8px;
   margin-left: 1rem;
+}
+
+.firstSection{
+  min-width: 32rem;
 }
 
 .BCimg {
@@ -227,15 +232,17 @@ p {
   color: var(--warm-black1);
 }
 
-.blackCards-container {
+.blackCards-section{
   position: relative;
   width: 100%;
+  min-width: 32rem;
   background-color: var(--warm-black);
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-size: cover;
 }
+
+
 
 .batata-icon {
   background: url("../assets/img/batata.svg");
@@ -245,43 +252,48 @@ p {
   top: -1rem;
 }
 
-.blackCards-container h2 {
+.blackCards-section h2 {
   color: white;
   text-align: center;
   width: 90%;
   margin: 6.4rem auto 2.4rem auto;
   font-size: 2.4rem;
 }
-.blackCards-container--title .blackCards-container--p {
+.blackCards-section--title .blackCards-section--p {
   text-align: center;
   margin: 0 auto 2.4rem auto;
 }
-.blackCards-container p {
+.blackCards-section p {
   width: 90%;
   margin: 0 0 2.4rem 0;
   color: #808080;
 }
 
+.black-cards__container{
+  padding-bottom: 64px;
+}
+
 .black-card {
   width: 90%;
   max-width: 90rem;
-  margin-top: 1.6rem;
+  margin: 1.6rem auto 0 auto;
+  
   background-color: var(--warm-black1);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
   border-radius: 4px;
   padding: 1.6rem;
 }
 
-.black-card:last-child {
+/* .black-card:last-child {
   margin-bottom: 6.4rem;
-}
+} */
 
 .black-card h3 {
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
   color: white;
-  margin-top: 1.4rem;
+  margin-top: 1.2rem;
   margin-bottom: 1rem;
 }
 
@@ -306,15 +318,18 @@ p {
 .eyeIcon,
 .dolarkIcon,
 .checkIcon {
-  padding: 0.1rem 1rem;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .photo-container {
   width: 100%;
+  min-width: 32rem;
   height: 38.7rem;
-  background: url("../assets/img/bitcoinbaby1.png");
+  background: url("../assets/img/bitcoinbaby1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -328,6 +343,10 @@ p {
   color: #ffffff;
   padding-top: 6rem;
 }
+
+.pricing{
+  min-width: 32rem;
+  }
 
 .pricing__info h3 {
   margin: 6.4rem 1.5rem 1.2rem 1.5rem;
@@ -343,17 +362,49 @@ p {
   margin: 1.2rem 1.5rem 2.5rem 1.5rem;
 }
 
+.pricing-cards__container{
+display: flex;
+justify-content: space-between;
+height: 350px;
+max-width: 900px;
+overflow: scroll;
+overflow-x: scroll;
+overscroll-behavior-x: contain;
+scroll-snap-type: x proximity;
+
+}
+
+.pricing-cards__container::-webkit-scrollbar {
+  background-color: var(--soft-orange);
+  height: 3px;
+  width: 0px;
+}
+.pricing-cards__container::-webkit-scrollbar-thumb {
+  background-color: var(--bitcoin-orange);
+}
+
 .pricing__card {
   position: relative;
+  scroll-snap-align: center;
   width: 190px;
+  min-width: 190px;
+  max-width: 220px;
   height: 247px;
   background: white;
   box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
   border-radius: 8px;
-  margin: 2.5rem auto 6.4rem auto;
+  margin: 2.5rem 5px 6.4rem 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  }
+
+  .pricing__card:first-child{
+  margin-left: 30px;
+}
+
+.pricing__card:last-child{
+  margin-right: 30px;
 }
 
 .pricing__card--recommended {
@@ -382,7 +433,7 @@ p {
 }
 
 .pricing__card--price p {
-  margin: 0.8rem 0 0.8rem 0;
+  margin: 0.8rem 0 0 0;
   font-family: Inter;
   font-weight: bold;
   font-size: 52px;
@@ -392,7 +443,7 @@ p {
 }
 
 .pricing__card--price span {
-  margin: 0.8rem 0 0.8rem 0;
+  margin: 0.8rem 0 0 0;
   font-family: Inter;
   font-size: 12px;
   line-height: 15px;
@@ -405,6 +456,7 @@ p {
   font-size: 12px;
   line-height: 15px;
   color: #757575;
+  margin-bottom: 1.5rem;
 }
 
 .pricing__card--CTA {
@@ -418,16 +470,24 @@ p {
   line-height: 18px;
   text-align: center;
   color: var(--warm-black);
+  
+  display: inline;
+  /* vertical-align: text-bottom; */
 }
 
 .pricing__card--CTA span {
+  display: inline-block;
   background: url("../assets/icons/arrow-right\ 1.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 4px 12px;
+  width: 24px;
+  height: 24px;
+  margin-left: 1rem;
+  vertical-align: middle;
 }
 
 footer {
+  min-width: 32rem;
   background-color: var(--bitcoin-orange);
   display: flex;
   justify-content: space-around;
@@ -453,10 +513,12 @@ footer {
 }
 
 .footer__logo span{
+  display: inline-block;
 background: url("../assets/img/batata.svg");
 background-size: cover;
 background-repeat: no-repeat;
-padding: 12px 20px;
+width: 40px;
+height: 24px;
 }
 
 .footer__logo p{
